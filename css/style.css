@@ -85,6 +85,38 @@ nav {
 
 /* fine sezione planning */
 
+/* sezione testimonials */
+#testimonials {
+    padding: 64px 0 112px;
+    background-color: white;
+}
+
+#testimonials .text {
+    height: 340px;
+    border: 1px solid black;
+    /* test */
+
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+#testimonials .cards-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+#testimonials .card {
+    height: 500px;
+    /* test */
+
+    width: 100%;
+    background-color: #9792E4;
+    border-radius: 48px;
+}
+
+/* fine sezione testimonials */
+
 
 
 
