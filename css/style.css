@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 /* navbar */
 nav {
     height: 78px;
@@ -117,6 +121,37 @@ nav {
 
 /* fine sezione testimonials */
 
+/* sezione benefits */
+#benefits {
+    padding: 72px 0 64px;
+    background-color: #9792E4;
+}
+
+#benefits h2 {
+    text-align: center;
+    margin-bottom: 64px;
+
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+}
+
+#benefits .cards-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+#benefits .card {
+    height: 400px;
+    /* test */
+
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* fine sezione benefits */
 
 
 
@@ -144,6 +179,17 @@ nav {
     #intro .card:nth-child(2) {
         height: auto;
     }
+
+    #benefits .cards-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 32px;
+    }
+
+    #benefits .card {
+        width: calc(100% / 2 - (32px / 2));
+    }
+
 }
 
 /* media query laptop */
@@ -166,6 +212,17 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+    }
+
+
+    #benefits .cards-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 32px;
+    }
+
+    #benefits .card {
+        width: calc(100% / 3 - 32px);
     }
 
 }
