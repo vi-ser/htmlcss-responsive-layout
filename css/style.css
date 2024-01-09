@@ -17,6 +17,10 @@ nav {
 
 .container {
     padding: 0 32px;
+    max-width: 1140px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* sezione intro */
@@ -26,6 +30,7 @@ nav {
     row-gap: 24px;
 
     margin-top: 48px;
+    padding-bottom: 80px;
 }
 
 #intro .card {
@@ -49,13 +54,48 @@ nav {
 
 /* fine sezione intro */
 
+/* sezione planning */
+#planning {
+    background-color: #9792E4;
+    padding: 64px 0;
+}
+
+
+#planning .left img {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+#planning .left .text {
+    height: 248px;
+    border: 1px solid white;
+    /* test */
+
+    margin-bottom: 32px;
+}
+
+#planning .right .card {
+    height: 600px;
+    /* text */
+
+    width: 100%;
+    background-color: white;
+    border-radius: 48px;
+}
+
+/* fine sezione planning */
+
 
 
 
 
 /* media query tablet */
 @media screen and (min-width: 768px) {
+
     #intro .container {
+        margin-left: auto;
+        margin-right: auto;
+
         flex-wrap: wrap;
         flex-direction: row;
         column-gap: 24px;
@@ -72,4 +112,28 @@ nav {
     #intro .card:nth-child(2) {
         height: auto;
     }
+}
+
+/* media query laptop */
+@media screen and (min-width:992px) {
+    #planning .container {
+        display: flex;
+        column-gap: 60px;
+    }
+
+    #planning .left {
+        width: 50%;
+    }
+
+    #planning .left .text {
+        margin-bottom: 0;
+    }
+
+    #planning .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
 }
