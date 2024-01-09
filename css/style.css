@@ -210,6 +210,13 @@ nav {
     text-align: center;
 }
 
+#cta .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 #cta #get-started {
     display: block;
     letter-spacing: 2px;
@@ -232,6 +239,7 @@ nav {
 
 #cta p {
     margin-bottom: 32px;
+    max-width: 488px;
 }
 
 #cta .button {
@@ -257,6 +265,37 @@ nav {
 
 /* fine sezione cta */
 
+/* footer */
+footer {
+    padding: 40px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a {
+    color: #9792E4;
+}
+
+footer p {
+    display: inline-block;
+    max-width: 380px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer p:first-child {
+    margin-bottom: 64px;
+}
+
+
+/* fine footer */
 
 /* RESPONSIVE */
 /* media query tablet */
