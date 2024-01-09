@@ -200,10 +200,65 @@ nav {
     text-decoration: none;
 }
 
-
 /* fine sezione about */
 
+/* sezione cta */
+#cta {
+    padding: 68px 0 64px;
+    background-color: #9792E4;
+    color: white;
+    text-align: center;
+}
 
+#cta #get-started {
+    display: block;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+#cta h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+
+#cta strong {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    color: #FDC15F;
+    margin-bottom: 48px;
+}
+
+#cta p {
+    margin-bottom: 32px;
+}
+
+#cta .button {
+    display: inline-block;
+    background-color: white;
+    color: #9792E4;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px 72px;
+    margin-bottom: 48px;
+}
+
+#cta #copy {
+    display: block;
+    font-size: 14px;
+}
+
+#cta .link {
+    color: white;
+}
+
+/* fine sezione cta */
+
+
+/* RESPONSIVE */
 /* media query tablet */
 @media screen and (min-width: 768px) {
 
@@ -254,6 +309,23 @@ nav {
 
     #about p {
         margin: 0;
+    }
+
+    #cta .container {
+        padding: 0 140px;
+    }
+
+    #cta h2 {
+        font-size: 48px;
+    }
+
+    #cta strong {
+        font-size: 97px;
+    }
+
+    #cta .button {
+        padding: 28px 80px;
+        font-size: 22px;
     }
 
 }
