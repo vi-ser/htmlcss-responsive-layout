@@ -85,22 +85,65 @@ nav .burger i {
 }
 
 #intro .card {
-    height: 360px;
+    /* height: 360px; */
     /* test */
 
     width: 100%;
     background-color: #B5DDFF;
 
     border-radius: 16px;
+
+    padding: 36px 30px;
+}
+
+#intro .card h3 {
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    color: #0084FD;
+    margin-bottom: 36px;
+}
+
+#intro .card p {
+    line-height: 26px;
+    margin-bottom: 36px;
+    color: #607587;
+}
+
+#intro .card .button {
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+
+    background-color: #0084FD;
+    padding: 10px 36px;
+    border-radius: 50px;
 }
 
 #intro .card:first-child {
-    height: 600px;
+    /* height: 600px; */
     /* test */
 
     background-color: #B5DDFF;
 
     border-radius: 16px;
+    padding-bottom: 0;
+}
+
+#intro .card:first-child .left {
+    margin-bottom: 36px;
+
+}
+
+#intro .card:first-child .right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#intro .card:first-child img {
+    width: 250px;
 }
 
 /* fine sezione intro */
@@ -369,9 +412,21 @@ footer p:first-child {
         width: calc(100% / 3 - 24px / 3 * 2);
     }
 
+    #intro .card p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #intro .card .button {
+        font-size: 22px;
+    }
+
+
     #intro .card:first-child {
         width: calc(100% / 3 * 2 - 24px / 3);
     }
+
+
 
     #intro .card:nth-child(2) {
         height: auto;
@@ -426,6 +481,20 @@ footer p:first-child {
 
 /* media query laptop */
 @media screen and (min-width:992px) {
+
+    #intro .container .card {
+        display: flex;
+    }
+
+    #intro .container .card:first-child .left {
+        margin-bottom: 60px;
+    }
+
+    #intro .container .card:first-child .right {
+        padding-top: 32px;
+        align-items: flex-end;
+    }
+
     #planning .container {
         display: flex;
         column-gap: 60px;
