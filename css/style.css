@@ -242,14 +242,31 @@ nav .burger i {
 #testimonials {
     padding: 64px 0 112px;
     background-color: white;
+    text-align: center;
 }
 
 #testimonials .text {
-    height: 340px;
-    border: 1px solid black;
-    /* test */
-
     width: 100%;
+    margin-bottom: 48px;
+}
+
+#testimonials span {
+    display: block;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+}
+
+#testimonials h2 {
+    color: #9792E4;
+    font-size: 36px;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+#testimonials p {
+    font-size: 20px;
+    line-height: 34px;
     margin-bottom: 48px;
 }
 
@@ -260,13 +277,38 @@ nav .burger i {
 }
 
 #testimonials .card {
-    height: 500px;
-    /* test */
-
     width: 100%;
     background-color: #9792E4;
     border-radius: 48px;
+
+    padding: 32px 16px;
+    color: white;
 }
+
+#testimonials .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    margin-bottom: 24px;
+}
+
+#testimonials .card q {
+    quotes: none;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+#testimonials .card strong {
+    display: block;
+    margin-top: 32px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
+
 
 /* fine sezione testimonials */
 
@@ -478,7 +520,6 @@ footer p:first-child {
     }
 
 
-
     #intro .card:nth-child(2) {
         height: auto;
     }
@@ -492,8 +533,23 @@ footer p:first-child {
         line-height: 28px;
     }
 
+    #testimonials .card {
+        display: flex;
+        text-align: start;
+    }
 
-    #benefits .cards-container {
+    #testimonials .card img {
+        margin-bottom: 0;
+    }
+
+    #testimonials .card .right {
+        padding-top: calc(64px - 32px);
+        padding-bottom: calc(64px - 32px);
+        padding-left: 24px;
+    }
+
+
+    #te #benefits .cards-container {
         flex-wrap: wrap;
         flex-direction: row;
         column-gap: 32px;
@@ -590,6 +646,12 @@ footer p:first-child {
         justify-content: flex-end;
     }
 
+    #testimonials .card .right {
+        padding-top: calc(80px - 32px);
+        padding-bottom: calc(80px - 32px);
+        padding-left: 64px;
+        padding-right: 40px;
+    }
 
     #benefits .cards-container {
         flex-wrap: wrap;
