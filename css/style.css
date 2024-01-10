@@ -224,7 +224,8 @@ nav .burger i {
 }
 
 #planning .right .card p {
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 30px;
     font-style: italic;
     margin-bottom: 20px;
 }
@@ -482,6 +483,16 @@ footer p:first-child {
         height: auto;
     }
 
+    #planning .left h2 {
+        font-size: 72px;
+    }
+
+    #planning .left p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
     #benefits .cards-container {
         flex-wrap: wrap;
         flex-direction: row;
@@ -562,6 +573,10 @@ footer p:first-child {
 
     #planning .left {
         width: 50%;
+    }
+
+    #planning .left h2 {
+        font-size: 36px;
     }
 
     #planning .left .text {
