@@ -377,7 +377,7 @@ nav .burger i {
 
 /* sezione about */
 #about {
-    padding: 88px 0 80px;
+    padding: 84px 0 80px;
 }
 
 #about h2 {
@@ -390,9 +390,13 @@ nav .burger i {
 
 #about p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 40px;
     margin-bottom: 56px;
+}
+
+#about .right {
+    position: relative;
 }
 
 #about img {
@@ -401,6 +405,13 @@ nav .burger i {
     border-radius: 50%;
 
     margin-bottom: 32px;
+}
+
+#about #quote {
+    color: #9792E4;
+    position: absolute;
+    left: 130px;
+    z-index: 1;
 }
 
 #about q {
@@ -413,13 +424,19 @@ nav .burger i {
     margin-bottom: 28px;
 }
 
-#about a {
+#about .button {
+    display: inline-block;
     background-color: #9792E4;
     color: white;
     border-radius: 50px;
 
     padding: 12px 16px;
     text-decoration: none;
+}
+
+#about .button i {
+    color: white;
+    margin: 0;
 }
 
 /* fine sezione about */
@@ -564,6 +581,10 @@ footer p:first-child {
         line-height: 28px;
     }
 
+    #testimonials h2 {
+        font-size: 44px;
+    }
+
     #testimonials .card {
         display: flex;
         text-align: start;
@@ -577,6 +598,10 @@ footer p:first-child {
         padding-top: calc(64px - 32px);
         padding-bottom: calc(64px - 32px);
         padding-left: 24px;
+    }
+
+    #benefits h2 {
+        font-size: 44px;
     }
 
 
@@ -602,6 +627,16 @@ footer p:first-child {
         padding: 0 64px;
         display: flex;
         column-gap: 64px;
+    }
+
+
+    #about img {
+        width: 234px;
+        height: 234px;
+    }
+
+    #about #quote {
+        left: calc(130px + 234px - 180px);
     }
 
     #about h2 {
