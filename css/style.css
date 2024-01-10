@@ -154,7 +154,6 @@ nav .burger i {
     justify-content: flex-start;
     gap: 36px;
     margin-bottom: 36px;
-
 }
 
 #intro .card:first-child .right {
@@ -308,7 +307,6 @@ nav .burger i {
     font-weight: 400;
 
 }
-
 
 /* fine sezione testimonials */
 
@@ -532,7 +530,6 @@ footer p {
 footer p:first-child {
     margin-bottom: 64px;
 }
-
 
 /* fine footer */
 
