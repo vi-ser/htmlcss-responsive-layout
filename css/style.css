@@ -181,20 +181,58 @@ nav .burger i {
 }
 
 #planning .left .text {
-    height: 248px;
-    border: 1px solid white;
-    /* test */
-
     margin-bottom: 32px;
 }
 
+#planning .left h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 56px;
+}
+
+#planning .left p {
+    color: white;
+    line-height: 26px;
+}
+
 #planning .right .card {
-    height: 600px;
-    /* text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 22px 32px;
 
     width: 100%;
     background-color: white;
     border-radius: 48px;
+
+    text-align: center;
+}
+
+#planning .right .card img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#planning .right .card h3 {
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#planning .right .card p {
+    line-height: 26px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#planning .right .card i {
+    background-color: #9792E4;
+    padding: 16px 20px;
+    border-radius: 50%;
 }
 
 /* fine sezione planning */
@@ -411,14 +449,6 @@ footer p:first-child {
 /* media query tablet */
 @media screen and (min-width: 768px) {
 
-    nav .right {
-        display: flex;
-    }
-
-    nav .burger {
-        display: none;
-    }
-
     #intro .container {
         margin-left: auto;
         margin-right: auto;
@@ -502,6 +532,14 @@ footer p:first-child {
 /* media query laptop */
 @media screen and (min-width:992px) {
 
+    nav .right {
+        display: flex;
+    }
+
+    nav .burger {
+        display: none;
+    }
+
     #intro .container .card {
         display: flex;
     }
@@ -518,6 +556,8 @@ footer p:first-child {
     #planning .container {
         display: flex;
         column-gap: 60px;
+        padding-left: 132px;
+        padding-right: 132px;
     }
 
     #planning .left {
